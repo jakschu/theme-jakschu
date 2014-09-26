@@ -1,0 +1,115 @@
+// basefont
+html
+	font: 16px font-sans 1.25 // does the font really work? try changing to a serif
+	text-rendering: optimizelegibility
+	-webkit-text-size-adjust: 100%
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+
+// headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+	color: color-title
+	font-weight: bold
+	margin-bottom: 1.5rem
+	& a
+		color: color-title
+		text-decoration: none
+		&:hover
+			color: color-title
+
+// links
+a
+	color: color-link;
+	text-decoration: none;
+	transition: color 0.2s ease-out;
+
+a:hover
+	color: #2a8998;
+
+abbr
+	cursor: help;
+
+acronym,
+abbr
+	border-bottom: 1px boder-color dotted;
+	font-variant: normal;
+
+pre,
+code
+	font-family: font-mono;
+	font-size: 1em;
+
+// TODO What is this for?
+strong,
+b {
+	font-weight: bold;
+}
+//
+
+em {
+	font-style: italic;
+}
+
+code {
+	text-shadow: 0 1px rgba(255,255,255,0);
+	padding: 0 0.3em;
+}
+
+del {
+	text-decoration: line-through;
+}
+
+blockquote
+	// TODO short font tag for release
+	font-family: font-serif
+	// font-weight: 200
+	margin: 1.5em 2em 1em
+	padding: 5px 20px
+	border-left: 2px solid #aaa
+	line-height: 1.5em
+	color: color-footer
+	p:last-child
+		margin-bottom: 0
+	footer
+		font-size: font-size
+		font-family: font-sans
+		cite
+			&:before
+				content: "—"
+				padding: 0 0.5em
+
+/* WHATTHE
+:root sub,
+:root sup {
+	vertical-align: baseline;
+}
+sup {
+	top: -0.5em;
+}
+sub {
+	bottom: -0.2em;
+}
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+}
+*/
+h1
+	font-size: 2rem
+h2
+	font-size: 1.8rem
+h3
+	font-size: 1.6rem
+h4
+	font-size: 1.4rem
+h5
+	font-size: 1.2rem
+h6
+	font-size: 1rem

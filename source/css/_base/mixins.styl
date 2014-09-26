@@ -1,0 +1,17 @@
+linkhover(){
+	transition: color 0.2s ease-out;
+	&:hover{
+		color: color-link;
+	}
+}
+
+// Fonts mixin
+font-url(file)
+	return '../fonts/' + file
+
+webfont(family, file, weight = normal, style = normal)
+	@font-face
+		font-family: family;
+		src: url(font-url(file + '.woff2')) format('woff2'), url(font-url(file + '.woff')) format('woff'), url(font-url(file + '.ttf')) format('truetype');
+		font-weight: weight;
+		font-style: style;

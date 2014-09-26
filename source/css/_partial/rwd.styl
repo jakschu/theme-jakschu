@@ -1,0 +1,147 @@
+// tablet
+@media (min-width:768px) and (max-width:1040px)
+	#container
+		width: 700px
+
+	#main
+		padding-left: 0
+
+	.entry-meta-header
+		position: static
+		margin-bottom: 1em
+		width: auto
+		.meta-elements
+			display: inline
+			margin-right: 1em
+		.commentscount
+			display: none
+
+	.post
+		font-size: 100%
+		.entry-title
+			font-size: 180%
+		.entry-content pre
+			white-space: pre-wrap
+			word-wrap: break-word
+			word-break: break-all
+			overflow-x: hidden
+
+// Mobile
+@media (max-width:767px)
+	#container
+		width: 93.75%
+		word-wrap: break-word
+
+	#mobile-nav-panel
+		display: block
+		background-color: nav-background-color
+		color: #fff;
+		position: relative;
+		top: 0;
+		left: 0;
+		right: 0;
+		font-size: 2em;
+		line-height: 1em;
+		padding: .25em 0 .25em .25em;
+
+	.nav
+		height: 0
+		width: 100%
+		overflow: hidden
+		margin: 0
+		position: relative;
+		left: 0
+		background-color: nav-background-color
+		&.active
+			height: auto
+			overflow: visible
+			transition: all 2s ease-out
+			z-index: 2
+		ul
+			display: block
+			li
+				display: block
+				width: 100%
+				margin: 0
+				&:hover
+					background-color:  lighten(nav-background-color, 5%)
+				a
+					display: block
+					border: none
+					padding: 1em .5em
+					color: #fff
+					border-bottom: 1px solid #677174
+					text-align: left
+
+	#search-form-wrap
+		display: none
+
+	#nav-search-btn, #nav-rss-link
+		display: none !important
+
+	#header
+		margin: 0em 0 3em 0
+		//text-align: center
+		position: static
+
+	.blog-title
+		text-align: center
+
+	#main
+		padding-left: 0
+		margin-bottom: 3em
+
+	.entry-meta-header
+		position: static
+		margin-bottom: 1em
+		width: auto
+		.meta-elements
+			display: inline
+			margin-right: 1em
+		.commentscount
+			display: none
+
+	.post
+		font-size: 90%
+		.entry-title
+			font-size: 180%
+		.entry-content
+			line-height: 1.8
+			blockquote
+				margin: 1em 0
+			table th, table td
+				word-break: break-all
+			iframe
+				width: 100% !important
+
+	.pagenation span,.pagenation a
+		padding: 5px
+		margin: 0
+
+	.mb-search
+		margin-top: 3em
+		margin-bottom: 0
+		display: initial
+		input
+			background: #fff
+			font-family: font-sans
+			font-size: 15px
+			padding: 5px 10px
+			border-bottom: 2px solid color-border !important
+			border: 0
+			width: 100%
+			box-sizing: border-box
+			color: color-meta
+			&:focus
+				color: color-default
+
+	#footer
+		margin: 0 0 3em 0
+		.footer-blog-title
+			float: none
+			margin-bottom: 1em
+
+@media (min-width:768px)
+	#header
+		width: 940px;
+		margin: 0 auto 4em;

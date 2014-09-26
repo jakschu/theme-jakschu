@@ -1,0 +1,155 @@
+#header
+	display: block
+	position: relative
+	*zoom: 1
+	#search-wrapper
+		width: 0
+		padding-left: 2px
+		position: relative
+		opacity: 0
+		transition: 0.5s
+		display: inline-block;
+		padding: 0 6px 0 6px
+		border-bottom: 2px solid lighten(color-default, 50%)
+		margin-top: -2px
+		&::before
+			border-left: 2px solid lighten(color-default, 50%)
+			position: absolute
+			top: 80%
+			bottom: 0
+			left: 0
+			content: " "
+		input
+			border: 0
+			padding:0
+			font-size: 1em
+			line-height: 1em
+			width: 100%
+			font-weight: bold
+			font-family: font-sans // TODO Work on this
+			-webkit-appearance: none;
+			&:focus
+				outline: 0
+
+	#toggle-search
+		display: none
+		&:checked ~ #search-wrapper
+			width: 160px
+			opacity: 1
+	#nav-search-btn {
+		cursor: pointer
+		linkhover()
+	}
+
+.blog-title
+	display: inline-block
+	font-size: 2.5em
+	font-weight: bold
+	padding-bottom: 0
+	letter-spacing: .1em
+	margin: 10px 0
+	//border-bottom: 5px solid color-title
+	a
+		color: text-color-title
+
+#mobile-nav-panel
+	display: none
+	padding: 15px 0 0
+	.icon-menu
+		cursor: pointer
+		display: inline-block
+
+.nav
+	margin: 10px 0
+	font-size: 85%
+	text-transform: uppercase
+	float: right
+	position: relative
+	ul
+		display: block
+		*zoom: 1
+		margin: 0
+		padding: 0
+		&:after
+			display: block
+			visibility: hidden
+			font-size: 0
+			height: 0;
+			clear: both
+			content: "."
+	li
+		float: left
+		margin: .3em 0 .3em 2em
+		img
+			vertical-align: middle
+
+	a
+		font-weight: bold
+		color: color-default
+		linkhover()
+
+.nav-icon
+	font-family: font-icon
+	text-align: center
+	font-size: font-size
+	width: font-size
+	height: font-size
+	padding: 20px 8px
+	position: relative
+	cursor: pointer
+/*
+#search-form-wrap
+	display: none
+	position: absolute
+	top: 10px
+	width: 150px
+	height: 30px
+	right: 280px
+	opacity: 0
+	transition: 0.2s ease-out
+	&.on
+		display: block
+		opacity: 1
+		right: 55px
+	@media (max-width:767px)
+		width: 100%
+		left: -100%
+
+.search-form
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	background: #fff
+	padding: 3px 15px
+	border-radius: 15px
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
+*/
+
+/*
+.search-form-input
+	border: none
+	background: none
+	color: color-default
+	letter-spacing: 1px
+	width: 90%
+	font: 13px font-sans
+	outline: none
+	&::-webkit-search-results-decoration
+	&::-webkit-search-cancel-button
+		-webkit-appearance: none
+
+.search-form-submit
+	position: absolute
+	top: 50%
+	right: 10px
+	margin-top: -7px
+	font: 13px font-icon
+	border: none
+	background: none
+	color: #bbb
+	cursor: pointer
+	&:hover
+	&:focus
+		color: #777
+*/
